@@ -1,0 +1,194 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f7f9fc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+/* ===== Keyframes (ported from the .dc.html screens) ===== */
+@keyframes forgeFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes forgeSlideIn {
+  from {
+    transform: translateX(48px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes forgePulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+@keyframes siIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes obIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes pubIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes hoIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes drawIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes spinrun {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== Hover utilities (ported from style-hover attributes) ===== */
+.hvr-bg-fog:hover {
+  background: #eff3fb !important;
+}
+.hvr-bg-blue:hover {
+  background: #2a41d8 !important;
+}
+.hvr-bg-navy:hover {
+  background: #2a3575 !important;
+}
+.hvr-bg-grey:hover {
+  background: #f2f5fa !important;
+}
+.hvr-bg-row:hover {
+  background: #f5f8fe !important;
+}
+.hvr-bg-lblue:hover {
+  background: #eef1ff !important;
+}
+.hvr-bg-cream:hover {
+  background: #fff8e6 !important;
+}
+.hvr-bg-cream2:hover {
+  background: #fff3d6 !important;
+}
+.hvr-bg-red:hover {
+  background: #fdeeef !important;
+}
+.hvr-bg-teal:hover {
+  background: #e6f5f3 !important;
+}
+.hvr-bg-orange:hover {
+  background: #fbf0e4 !important;
+}
+.hvr-bg-green:hover {
+  background: #e7f4ec !important;
+}
+.hvr-bg-mauve:hover {
+  background: #f9f4f6 !important;
+}
+.hvr-bg-white20:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+.hvr-bc-blue:hover {
+  border-color: #3d5afe !important;
+}
+.hvr-bc-grey:hover {
+  border-color: #c9d3e4 !important;
+}
+.hvr-bc-gold:hover {
+  border-color: #b8860b !important;
+}
+.hvr-bc-teal:hover {
+  border-color: #0e9c8c !important;
+}
+.hvr-bc-red:hover {
+  border-color: #c7131f !important;
+}
+.hvr-bc-orange:hover {
+  border-color: #b95c00 !important;
+}
+.hvr-underline:hover {
+  text-decoration: underline !important;
+}
+.hvr-op90:hover {
+  opacity: 0.9 !important;
+}
+.hvr-op92:hover {
+  opacity: 0.92 !important;
+}
+.hvr-shadow:hover {
+  box-shadow: 0 4px 16px rgba(30, 39, 97, 0.08) !important;
+}
+.hvr-shadow-amber:hover {
+  box-shadow: 0 4px 14px rgba(184, 134, 11, 0.18) !important;
+}
+.hvr-shadow-row:hover {
+  box-shadow: 0 4px 14px rgba(30, 39, 97, 0.1) !important;
+}
+.hvr-shadow-stage:hover {
+  box-shadow: 0 4px 16px rgba(30, 39, 97, 0.1) !important;
+}
+.hvr-c-navy:hover {
+  color: #1e2761 !important;
+}
+.hvr-c-grey:hover {
+  color: #8a93a6 !important;
+}

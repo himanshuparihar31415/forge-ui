@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($candidates = @\\(\"$env:ProgramFiles\\\\nodejs\\\\node.exe\", \"$env:LOCALAPPDATA\\\\Programs\\\\nodejs\\\\node.exe\", \"$env:APPDATA\\\\nvm\", \"$env:ProgramFiles\\\\nodejs\"\\); foreach \\($c in $candidates\\) { if \\(Test-Path $c\\) { Write-Output \"FOUND: $c\" } }; Get-Command bun, deno, yarn, pnpm -ErrorAction SilentlyContinue | Select-Object Name, Source)",
+      "PowerShell(winget --version)",
+      "PowerShell(winget install OpenJS.NodeJS.LTS --accept-source-agreements --accept-package-agreements --silent --scope user)",
+      "PowerShell($paths = @\\(\"$env:ProgramFiles\\\\nodejs\", \"$env:LOCALAPPDATA\\\\Programs\\\\nodejs\", \"$env:LOCALAPPDATA\\\\Microsoft\\\\WinGet\\\\Packages\"\\); foreach \\($p in $paths\\) { if \\(Test-Path \"$p\\\\node.exe\"\\) { Write-Output \"node at: $p\" } }; Get-ChildItem \"$env:LOCALAPPDATA\\\\Microsoft\\\\WinGet\\\\Packages\" -Filter \"node.exe\" -Recurse -ErrorAction SilentlyContinue | Select-Object -First 1 -ExpandProperty FullName)",
+      "PowerShell($nodeDir = \"C:\\\\Users\\\\himanshu.parihar\\\\AppData\\\\Local\\\\Microsoft\\\\WinGet\\\\Packages\\\\OpenJS.NodeJS.LTS_Microsoft.Winget.Source_8wekyb3d8bbwe\\\\node-v24.16.0-win-x64\"; $env:Path = \"$nodeDir;$env:Path\"; node --version; npm --version; npm install --no-audit --no-fund)"
+    ]
+  }
+}
